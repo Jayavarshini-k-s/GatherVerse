@@ -1,17 +1,15 @@
 # 🎉 GatherVerse - College Event Management System  
 
-![GATHER_VERSE - Made with PosterMyWall](https://github.com/user-attachments/assets/91f91182-466f-48c2-9783-b3bd03e2793a)
-
-## 📸 Website Screenshots  
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/5a1dc0f3-572f-400c-97cf-9c701f0a8558" width="80%" alt="Homepage">
-</p>
-
+![GATHER_VERSE - Made with PosterMyWall (1)](https://github.com/user-attachments/assets/48dddc1d-51c6-4508-afa4-ffc127ed4184)
 
 ## 📌 Introduction  
 GatherVerse is a **college event management website** designed to streamline **event organization and participation** for students and administrators. It provides an **intuitive interface** for event discovery, registration, and management, making campus events **more accessible and well-organized**.
 
 ---
+## 📸 Website Screenshot  
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/5a1dc0f3-572f-400c-97cf-9c701f0a8558" width="80%" alt="Homepage">
+</p>
 
 ## 🚀 Features  
 
@@ -68,8 +66,8 @@ GatherVerse/
 │── .gitignore                            # Git ignore file  
 
 
-💻 Setup & Installation 
-1️⃣ Clone the Repository 
+💻 Setup & Installation   
+<br>1️⃣ Clone the Repository 
 ```bash
   git clone https://github.com/your-username/GatherVerse.git cd GatherVerse 
 ```
