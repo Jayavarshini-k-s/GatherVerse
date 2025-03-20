@@ -94,12 +94,11 @@ or
 ```
 
 📩 Contributions & Feedback Feel free to contribute, open issues, or suggest improvements! 🚀
-🌱 Future Enhancements
-🔹 Implement user authentication with JWT for security.
-🔹 Add event categories & filters.
-🔹 Enable email notifications for event reminders.
-🔹 Deploy on a free hosting platform (e.g., Render, Railway).
+🌱 Future Enhancements  
+🔹 Implement user authentication with JWT for security.  
+🔹 Add event categories & filters.  
+🔹 Enable email notifications for event reminders.  
+🔹 Deploy on a free hosting platform (e.g., Render, Railway).  
 
-📩 Contributions & Feedback
-Feel free to contribute, open issues, or suggest improvements! 🚀
+
 
