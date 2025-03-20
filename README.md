@@ -41,25 +41,31 @@ GatherVerse/
 │── .gitignore                            # Git ignore file  
 
 
-💻 Setup & Installation
-1️⃣ Clone the Repository
-git clone https://github.com/your-username/GatherVerse.git
-cd GatherVerse
-
+💻 Setup & Installation 
+1️⃣ Clone the Repository git clone https://github.com/your-username/GatherVerse.git cd GatherVerse 
 2️⃣ Set Up MySQL Database
-Create a database named eventmanagement.
-Import the provided .sql file (if available).
-Configure database credentials in application.properties:
-spring.datasource.url=jdbc:mysql://localhost:3306/eventmanagement
-spring.datasource.username=root
-spring.datasource.password=yourpassword
-spring.jpa.hibernate.ddl-auto=update
 
-3️⃣ Run the Project
-mvn spring-boot:run
+Create a database named eventmanagement. 
+Import the provided .sql file (if available). 
+Configure database credentials in application.properties: 
+```bash
+  spring.datasource.url=jdbc:mysql://localhost:3306/eventmanagement spring.datasource.username=root spring.datasource.password=yourpassword spring.jpa.hibernate.ddl-auto=update
+```
+
+3️⃣ Run the Project 
+## Deployment
+
+To deploy this project run
+
+```bash
+  mvn spring-boot:run
+```
 or
-java -jar target/eventmanagement.jar
+```bash
+  java -jar target/eventmanagement.jar
+```
 
+📩 Contributions & Feedback Feel free to contribute, open issues, or suggest improvements! 🚀
 🌱 Future Enhancements
 🔹 Implement user authentication with JWT for security.
 🔹 Add event categories & filters.
