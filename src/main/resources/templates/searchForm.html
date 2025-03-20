@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html layout:decorate="layouts/defaultLayout" lang="en" xmlns:th="http://www.w3.org/1999/xhtml"
+      xmlns:layout="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div layout:fragment="content">
+
+    <div class="container mt-3 mb-3">
+        <form th:action="@{/orders/search}" action="#" method="post" th:object="${searchModel}">
+            <div class="mb-3">
+                <label for="searchTerminput" class="form-label">Search Term</label>
+                <input th:field="*{searchTerm}" type="text" class="form-control" id="searchTerminput" aria-describedby="searchTermHelp">
+                <div id="searchTermHelp" class="form-text">Give me a phrase to search for.</div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+</div>
+</div>
+</body>
+</html>

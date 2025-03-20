@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html layout:decorate="layouts/defaultLayout" lang="en" xmlns:th="http://www.w3.org/1999/xhtml"
+      xmlns:layout="http://www.w3.org/1999/xhtml">
+<head>
+  <title th:text="${title}">Edit Order</title>
+</head>
+
+<body>
+<div layout:fragment="content">
+  <div class="container mt-3 mb-3">
+    <form action="#" th:action="@{/orders/doUpdate}" th:object="${orderModel}" method="post">
+      <input type="hidden" th:field="*{id}" name="id">
+      <div class="input-group input-group-lg">
+        <span class="input-group-text" id="inputGroup-sizing-lg">EventNumber</span>
+        <input type="text" class="form-control" th:field="*{orderNo}" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+        <div class="fieldError">
+          <p th:if="${#fields.hasErrors('orderNo')}" th:errors="*{orderNo}">Event Number Error</p>
+        </div>
+      </div>
+      <div class="input-group input-group-lg">
+        <span class="input-group-text" id="inputGroup-sizing-lg">Event Name</span>
+        <input type="text" class="form-control" th:field="*{productName}" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+        <div class="fieldError">
+          <p th:if="${#fields.hasErrors('productName')}" th:errors="*{productName}">Event Name Error</p>
+        </div>
+      </div>
+      <div class="input-group input-group-lg">
+        <span class="input-group-text" id="inputGroup-sizing-lg">Price</span>
+        <input type="text" class="form-control" th:field="*{price}" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+        <div class="fieldError">
+          <p th:if="${#fields.hasErrors('price')}" th:errors="*{price}">Price Error</p>
+        </div>
+      </div>
+
+      <div class="input-group input-group-lg">
+        <span class="input-group-text" id="inputGroup-sizing-lg">Quantity</span>
+        <input type="text" class="form-control" th:field="*{quantity}" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+        <div class="fieldError">
+          <p th:if="${#fields.hasErrors('quantity')}" th:errors="*{quantity}">Days Error</p>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Update</button>
+      <div th:if="${#fields.hasErrors('*')}">List of Errors</div>
+    </form>
+  </div>
+
+</div>
+</body>
+</html>

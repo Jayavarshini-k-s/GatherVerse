@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html layout:decorate="layouts/defaultLayout" lang="en" xmlns:th="http://www.w3.org/1999/xhtml" xmlns:layout="http://www.w3.org/1999/xhtml">
+<body>
+
+<div class="container my-5" layout:fragment="content">
+    <!-- Display error message if it exists -->
+    <div class="alert alert-danger" th:if="${errorMessage}" role="alert">
+        <p th:text="${errorMessage}">Invalid username or password.</p>
+    </div>
+<form action="#" method="post" th:action="@{processLogin}" th:object="${loginModel}">
+    <input type="hidden" th:field="*{role}" /> <!-- Hidden input for role -->
+    <div class="mb-3">
+        <label for="username" class="form-label">Username</label>
+        <input th:field = "*{username}" type="text" class="form-control" id="username" aria-describedby="usernamehelp">
+        <div id="usernamehelp" class="form-text">We'll never share your email with anyone else.</div>
+        <p class="alert alert-danger" th:if="${#fields.hasErrors('username')}" th:errors="*{username}">Username Error</p>
+    </div>
+    <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input th:field = "*{password}" type="text" class="form-control" id="password">
+        <p class="alert alert-danger" th:if="${#fields.hasErrors('password')}" th:errors="*{password}">Password Error</p>
+    </div>
+    <button type="submit" class="btn btn-primary">Login</button>
+</form>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="/js/script.js"></script>
+</body>
+</html>

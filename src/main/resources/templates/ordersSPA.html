@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/html">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+          integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+          crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" th:href="@{/css/spa.css?v=1}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+
+</head>
+<body>
+<div class="container mt-5" id="main-body">
+    <h2 class="mb-4">Search</h2>
+    <p>Search for the event in the GatherVerse</p>
+
+    <div id="search-form" class="form-section mb-5">
+        <div class="form-group mb-4">
+            <label for="searchTerm" class="form-label">Search Term</label>
+            <input type="text" class="form-control" id="searchTerm" name="searchTerm" value="a">
+        </div>
+        <div>
+            <button class="btn btn-primary btn-rounded btn-pulsate" type="button" id="search-button">
+                <i class="bi bi-search"></i> Search
+            </button>
+        </div>
+    </div>
+
+    <p>If you click the "OK" button, the REST API will fetch data</p>
+
+    <div id="entry-form" class="container form-section">
+        <h2>Edit Item</h2>
+        <div class="form-group mb-4">
+            <label for="orderId" class="form-label">Event ID</label>
+            <input type="text" class="form-control" id="orderId" aria-describedby="order id">
+        </div>
+
+        <div class="form-group mb-4">
+            <label for="ordernumber" class="form-label">Event Number</label>
+            <input type="text" class="form-control" id="ordernumber">
+        </div>
+
+        <div class="form-group mb-4">
+            <label for="ordereventname" class="form-label">Event Name</label>
+            <input type="text" class="form-control" id="ordereventname">
+        </div>
+
+        <div class="form-group mb-4">
+            <label for="orderprice" class="form-label">Event Price</label>
+            <input type="text" class="form-control" id="orderprice">
+        </div>
+
+        <div class="form-group mb-4">
+            <label for="orderquantity" class="form-label">Event Quantity</label>
+            <input type="text" class="form-control" id="orderquantity">
+        </div>
+
+        <button class="btn btn-primary btn-rounded" type="button" id="form-ok">
+            <i class="bi bi-check-circle"></i> OK
+        </button>
+    </div>
+
+    <div id="results-box"></div>
+</div>
+<script th:src="@{/js/site.js}"></script>
+</body>
+</html>
