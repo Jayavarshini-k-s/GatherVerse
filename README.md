@@ -1,3 +1,6 @@
+
+![GATHER_VERSE - Made with PosterMyWall](https://github.com/user-attachments/assets/91f91182-466f-48c2-9783-b3bd03e2793a)
+
 📌 GatherVerse - College Event Management System
 GatherVerse is a college event management website designed to streamline event organization and participation for students and administrators. It provides an intuitive interface for event discovery, registration, and management, making campus events more accessible and well-organized.
 
