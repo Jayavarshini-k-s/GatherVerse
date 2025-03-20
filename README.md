@@ -45,8 +45,8 @@ GatherVerse/
 1️⃣ Clone the Repository
 git clone https://github.com/your-username/GatherVerse.git
 cd GatherVerse
-2️⃣ Set Up MySQL Database
 
+2️⃣ Set Up MySQL Database
 Create a database named eventmanagement.
 Import the provided .sql file (if available).
 Configure database credentials in application.properties:
@@ -57,9 +57,7 @@ spring.jpa.hibernate.ddl-auto=update
 
 3️⃣ Run the Project
 mvn spring-boot:run
-
 or
-
 java -jar target/eventmanagement.jar
 
 🌱 Future Enhancements
