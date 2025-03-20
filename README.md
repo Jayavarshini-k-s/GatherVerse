@@ -2,6 +2,12 @@
 
 ![GATHER_VERSE - Made with PosterMyWall](https://github.com/user-attachments/assets/91f91182-466f-48c2-9783-b3bd03e2793a)
 
+## 📸 Website Screenshots  
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/5a1dc0f3-572f-400c-97cf-9c701f0a8558" width="80%" alt="Homepage">
+</p>
+
+
 ## 📌 Introduction  
 GatherVerse is a **college event management website** designed to streamline **event organization and participation** for students and administrators. It provides an **intuitive interface** for event discovery, registration, and management, making campus events **more accessible and well-organized**.
 
@@ -13,7 +19,11 @@ GatherVerse is a **college event management website** designed to streamline **e
 - 👤 **Student Login** – Log in using credentials stored in a MySQL database.  
 - 📅 **Event Listing** – View all upcoming events with ID, date, name, price, and location details.  
 - 🔍 **Event Search** – Easily search for specific events.  
-- 🎟 **Event Registration** – Register for events seamlessly.  
+- 🎟 **Event Registration** – Register for events seamlessly.
+  
+  ![Image](https://github.com/user-attachments/assets/ad8c4359-2a69-413f-886a-2113e6bd92f1)
+
+  ![Image](https://github.com/user-attachments/assets/34f319f9-c205-44e5-bc13-d01a2ff79183)
 
 ### 🔹 Admin (EventNexus) Panel  
 - 🔐 **Admin Login** – Secure login with database authentication.  
@@ -21,6 +31,8 @@ GatherVerse is a **college event management website** designed to streamline **e
 - ✏ **Edit Events** – Modify event details such as ID, date, name, price, and location.  
 - ❌ **Delete Events** – Remove events from the system.  
 - 📋 **Dashboard Navigation** – Includes options like `"All Current Events"`, `"Search"`, `"Add"`, `"Event Nexus (Admin)"`.  
+![Image](https://github.com/user-attachments/assets/5b026fca-0c74-49e8-ae26-fee144d055c5)
+![Image](https://github.com/user-attachments/assets/61b35836-2b7a-4842-bf91-d5678d177f60)
 
 ---
 
