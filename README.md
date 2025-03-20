@@ -36,4 +36,60 @@ GatherVerse is a **college event management website** designed to streamline **e
 ---
 
 ## 📂 Project Structure  
+📂 Project Structure
+GatherVerse/  
+│── src/  
+│   ├── main/  
+│   │   ├── java/com/jaya/GatherVerse/  
+│   │   │   ├── controllers/           # Handles HTTP requests (e.g., AdminController, UserController)  
+│   │   │   ├── data/                   # Data access layer (Repositories, Data Access Interfaces)  
+│   │   │   ├── models/                 # Entity models (Event, User, etc.)  
+│   │   │   ├── services/               # Business logic layer (Service classes)  
+│   │   │   ├── GatherVerseApplication.java  # Main Spring Boot Application class  
+│   │   │   ├── SpringConfig.java        # Configuration file for Spring settings  
+│   ├── resources/  
+│   │   ├── templates/                   # Thymeleaf HTML templates (userDashboard.html, ordersAdmin.html)  
+│   │   ├── static/                       # Static assets (CSS, JS, images)  
+│   │   ├── application.properties        # Database & application configurations  
+│── pom.xml                               # Maven dependencies  
+│── README.md                             # Project documentation  
+│── .gitignore                            # Git ignore file  
+
+
+💻 Setup & Installation 
+1️⃣ Clone the Repository 
+```bash
+  git clone https://github.com/your-username/GatherVerse.git cd GatherVerse 
+```
+2️⃣ Set Up MySQL Database
+
+Create a database named eventmanagement. 
+Import the provided .sql file (if available). 
+Configure database credentials in application.properties: 
+```bash
+  spring.datasource.url=jdbc:mysql://localhost:3306/eventmanagement spring.datasource.username=root spring.datasource.password=yourpassword spring.jpa.hibernate.ddl-auto=update
+```
+
+3️⃣ Run the Project 
+## Deployment
+
+To deploy this project run
+
+```bash
+  mvn spring-boot:run
+```
+or
+```bash
+  java -jar target/eventmanagement.jar
+```
+
+📩 Contributions & Feedback Feel free to contribute, open issues, or suggest improvements! 🚀
+🌱 Future Enhancements
+🔹 Implement user authentication with JWT for security.
+🔹 Add event categories & filters.
+🔹 Enable email notifications for event reminders.
+🔹 Deploy on a free hosting platform (e.g., Render, Railway).
+
+📩 Contributions & Feedback
+Feel free to contribute, open issues, or suggest improvements! 🚀
 
