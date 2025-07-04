@@ -83,15 +83,13 @@ Configure database credentials in application.properties:
 3️⃣ Run the Project 
 ## Deployment
 
-To deploy this project run
+To deploy this project 
+In your desired browser run
 
 ```bash
-  mvn spring-boot:run
+  http://localhost:8080/login/
 ```
-or
-```bash
-  java -jar target/eventmanagement.jar
-```
+then you can start using the website and explore the features in it.
 
 📩 Contributions & Feedback Feel free to contribute, open issues, or suggest improvements! 🚀
 🌱 Future Enhancements  
