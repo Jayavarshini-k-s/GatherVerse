@@ -70,16 +70,10 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		<dependency>
-			<groupId>org.jetbrains</groupId>
-			<artifactId>annotations</artifactId>
-			<version>RELEASE</version>
-			<scope>compile</scope>
-		</dependency>
         <dependency>
-            <groupId>com.jaya</groupId>
-            <artifactId>GatherVerse</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <groupId>org.jetbrains</groupId>
+            <artifactId>annotations</artifactId>
+            <version>RELEASE</version>
             <scope>compile</scope>
         </dependency>
 		<!-- https://mvnrepository.com/artifact/com.mysql/mysql-connector-j -->
