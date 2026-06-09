@@ -1,9 +1,9 @@
 package com.jaya.GatherVerse;
 
-import com.jaya.GatherVerse.data.OrdersDataAccessInterface;
-import com.jaya.GatherVerse.data.OrdersDataServiceForRepository;
-import com.jaya.GatherVerse.services.OrdersBusinessService;
-import com.jaya.GatherVerse.services.OrdersBusinessServiceInterface;
+import com.jaya.GatherVerse.data.EventsDataAccessInterface;
+import com.jaya.GatherVerse.data.EventsDataServiceForRepository;
+import com.jaya.GatherVerse.services.EventsBusinessService;
+import com.jaya.GatherVerse.services.EventsBusinessServiceInterface;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -14,19 +14,18 @@ import javax.sql.DataSource;
 @Configuration
 public class SpringConfig {
 
-    @Bean(name="ordersBusinessService", initMethod = "init", destroyMethod = "destroy")
+    @Bean(name="eventsBusinessService", initMethod = "init", destroyMethod = "destroy")
     @RequestScope
-    public OrdersBusinessServiceInterface getOrdersBusiness(){
-        return new OrdersBusinessService();
+    public EventsBusinessServiceInterface getEventsBusiness(){
+        return new EventsBusinessService();
     }
 
     @Autowired
     DataSource dataSource;
 
-    @Bean(name="ordersDAO")
+    @Bean(name="eventsDAO")
     @RequestScope
-    public OrdersDataAccessInterface getDataService(){
-        return new OrdersDataServiceForRepository(dataSource);
-        //return new OrdersDataService();
+    public EventsDataAccessInterface getEventsDataService(){
+        return new EventsDataServiceForRepository(dataSource);
     }
 }

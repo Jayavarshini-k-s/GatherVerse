@@ -62,9 +62,9 @@ public class LoginController {
 
         // If valid user, redirect based on role
         if ("admin".equals(role)) {
-            return "redirect:/orders/admin"; // Redirect to the admin dashboard
+            return "redirect:/events/admin"; // Redirect to the admin dashboard
         } else if ("student".equals(role)) {
-            return "redirect:/orders/student"; // Redirect to the student dashboard
+            return "redirect:/events/student"; // Redirect to the student dashboard
         } else {
             model.addAttribute("error", "Invalid role");
             return "loginForm"; // Show error in login form

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html layout:decorate="layouts/defaultLayout" lang="en" xmlns:th="http://www.w3.org/1999/xhtml"
+      xmlns:layout="http://www.w3.org/1999/xhtml">
+<div layout:fragment="content">
+    <h2 th:text="${title}"></h2>
+    <table class="table table-light table-striped">
+        <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Date</th>
+            <th scope="col">EventName</th>
+            <th scope="col">Venue</th>
+            <th scope="col">Seats</th>
+            <th scope="col">Fee</th>
+            <th scope="col">Delete</th>
+            <th scope="col">Edit</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="event: ${events}">
+            <td th:text="${event.eventId}"></td>
+            <td th:text="${event.eventDate}"></td>
+            <td th:text="${event.eventName}"></td>
+            <td th:text="${event.venue}"></td>
+            <td th:text="${event.seats}"></td>
+            <td th:text="${event.fee}"></td>
+            <td>
+                <form action="#" th:action="@{/events/delete/}" th:object="${event}" method="post">
+                    <input name="eventId" type="hidden" th:value="${event.eventId}">
+                    <input name="eventDate" type="hidden" th:value="${event.eventDate}">
+                    <input name="eventName" type="hidden" th:value="${event.eventName}">
+                    <input name="description" type="hidden" th:value="${event.description}">
+                    <input name="venue" type="hidden" th:value="${event.venue}">
+                    <input name="seats" type="hidden" th:value="${event.seats}">
+                    <input name="fee" type="hidden" th:value="${event.fee}">
+                    <button class="btn btn-danger" type="submit" name="deleteItem">Delete</button>
+                </form>
+            </td>
+            <td>
+                <form action="#" th:action="@{/events/editForm/}" th:object="${event}" method="post">
+                    <input name="eventId" type="hidden" th:value="${event.eventId}">
+                    <input name="eventDate" type="hidden" th:value="${event.eventDate}">
+                    <input name="eventName" type="hidden" th:value="${event.eventName}">
+                    <input name="description" type="hidden" th:value="${event.description}">
+                    <input name="venue" type="hidden" th:value="${event.venue}">
+                    <input name="seats" type="hidden" th:value="${event.seats}">
+                    <input name="fee" type="hidden" th:value="${event.fee}">
+                    <button class="btn btn-secondary" type="submit" name="editItem">Edit</button>
+                </form>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</html>

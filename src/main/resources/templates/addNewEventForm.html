@@ -2,17 +2,12 @@
 <html layout:decorate="layouts/defaultLayout" lang="en" xmlns:th="http://www.w3.org/1999/xhtml"
       xmlns:layout="http://www.w3.org/1999/xhtml">
 <div layout:fragment="content">
-    <form action="#" th:action="@{/events/doUpdate}" th:object="${eventModel}" method="post">
-        <h2 th:text="${title}"></h2>
-
-        <div class="mb-3">
-            <label for="eventId" class="form-label">Event Id</label>
-            <input type="text" th:field="*{eventId}" class="form-control" id="eventId" readonly>
-        </div>
-
+    <form action="#" th:action="@{/events/addNew}" th:object="${event}" method="post">
+        <h2>Add a New Event</h2>
         <div class="mb-3">
             <label for="eventName" class="form-label">Event Name</label>
             <input type="text" th:field="*{eventName}" class="form-control" id="eventName" aria-describedby="eventNameHelp">
+            <div id="eventNameHelp" class="form-text">Give a name to your event.</div>
         </div>
 
         <div class="mb-3">
@@ -40,7 +35,7 @@
             <input type="text" th:field="*{fee}" class="form-control" id="fee">
         </div>
 
-        <button type="submit" class="btn btn-primary">Update Details</button>
+        <button type="submit" class="btn btn-primary">Submit</button>
     </form>
 </div>
 </html>

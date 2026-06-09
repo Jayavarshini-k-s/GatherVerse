@@ -1,0 +1,4 @@
+USE eventdb;
+
+INSERT INTO users (id, username, password, role) VALUES (1, 'john_doe', 'mypassword', 'student');
+
