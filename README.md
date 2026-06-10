@@ -87,7 +87,7 @@ To deploy this project
 In your desired browser run
 
 ```bash
-  http://localhost:8080/login/
+  https://gatherverse-1.onrender.com
 ```
 then you can start using the website and explore the features in it.
 
